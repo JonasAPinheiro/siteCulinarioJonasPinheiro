@@ -3,13 +3,13 @@ function redirecionarCategoria(elementoSelecionado){
     
     switch(categoria) {
         case 1:
-            window.location.href = "/siteCulinarioJonasPinheiro/paginas/salgadas.html";
+            window.location.href = "/siteReceitasDoJoninhas/paginas/salgadas.html";
             break;
         case 2:
-            window.location.href = "/siteCulinarioJonasPinheiro/paginas/doces.html";
+            window.location.href = "/siteReceitasDoJoninhas/paginas/doces.html";
             break;
         default:
-            window.location.href = "/siteCulinarioJonasPinheiro/paginas/drinks.html";
+            window.location.href = "/siteReceitasDoJoninhas/paginas/drinks.html";
     }
 }
 
