@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas do Joninhas</title>
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="../estilos/receitas.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="../imagens/LogoAzul.png" alt="Logo do Site">
+        </figure>
+        <nav>
+            <a href="../index.html"><p>Inicio</p></a>
+            <a href="formulario.html"><p>Enviar Receita</p></a>
+            <menu>
+                <select onchange="redirecionarCategoria(this)" name="categoria" class="categoria">
+                    <option selected disabled>Receitas</option>
+                    <option value="salgadas">Salgadas</option>
+                    <option value="doces">Doces</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </menu>
+
+            <button onclick="mostrarMenu()"><img src="../imagens/menuHamburguer.png" alt=""></button>
+        </nav>
+
+        <section id="menuMobile">
+            <a href="../index.html"><p>Inicio</p></a>
+            <a href="formulario.html"><p>Enviar Receita</p></a>
+            <menu>
+                <select onchange="redirecionarCategoria(this)" name="categoria" class="categoria">
+                    <option selected disabled>Receitas</option>
+                    <option value="salgadas">Salgadas</option>
+                    <option value="doces">Doces</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </menu>
+        </section>
+    </header>
+    <main>
+        <h2>Receitas Doces</h2>      
+
+        <section class="receita">
+            <hr>
+            <h2>Bolo de cenoura</h2>
+            <section class="informacoes">
+                <figure>
+                    <img src="../imagens/boloCenoura.jfif" alt="Imagem da receita">
+                </figure>
+                <article>
+                    <p>Confira essa clássica receita de bolo de cenoura simples e fácil, nossa campeã de acessos! O bolo de cenoura é um doce muito popular em nosso país, especialmente no café da manhã e no lanche da tarde. Com sua cobertura de chocolate irresistível e seu interior macio e úmido, ela é uma receita que conquista o coração de todos! Veja com a gente como fazer bolo de cenoura, uma receita prática, preparada com auxílio do liquidificador e perfeita para degustar com um cafezinho!</p>
+                    <button type="button">Ver receita</button>
+                </article>
+            </section>
+            <hr>
+        </section>
+
+        <section class="receita">
+            <hr>
+            <h2>Palha Italiana</h2>
+            <section class="informacoes">
+                <figure>
+                    <img src="../imagens/palhaItaliana.jfif" alt="Imagem da receita">
+                </figure>
+                <article>
+                    <p>Experimente a deliciosa Palha Italiana, uma sobremesa irresistível que é um verdadeiro sucesso em qualquer ocasião! Este doce tradicional brasileiro combina a textura crocante das bolachas com o sabor envolvente do chocolate, criando uma mistura perfeita de sabor e textura. A Palha Italiana é fácil de preparar e pode ser feita em pouco tempo, ideal para quem busca um doce caseiro e saboroso. Seja para um lanche rápido ou uma ocasião especial, descubra como fazer essa delícia que vai conquistar o paladar de todos!</p>
+                    <button type="button">Ver receita</button>
+                </article>
+            </section>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <p>Desenvolvido por Jonas</p>
+            <p>Email: JonasReceitas@gmail.com<p>
+              <abbr title="Phone">Tel:</abbr> (15) 99999-7777 
+             </p>
+          </address>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

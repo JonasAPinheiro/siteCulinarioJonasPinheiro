@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas do Joninhas</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="imagens/LogoAzul.png" alt="Logo do Site">
+        </figure>
+        <nav>
+            <a href="index.html"><p>Inicio</p></a>
+            <a href="paginas/formulario.html"><p>Enviar Receita</p></a>
+            <menu>
+                <select onchange="redirecionarCategoria(this)" name="categoria" class="categoria">
+                    <option selected disabled>Receitas</option>
+                    <option value="salgadas">Salgadas</option>
+                    <option value="doces">Doces</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </menu>
+
+            <button onclick="mostrarMenu()"><img src="imagens/menuHamburguer.png" alt=""></button>
+        </nav>
+
+        <section id="menuMobile">
+            <a href="index.html"><p>Inicio</p></a>
+            <a href="paginas/formulario.html"><p>Enviar Receita</p></a>
+            <menu>
+                <select onchange="redirecionarCategoria(this)" name="categoria" class="categoria">
+                    <option selected disabled>Receitas</option>
+                    <option value="salgadas">Salgadas</option>
+                    <option value="doces">Doces</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </menu>
+        </section>
+        
+    </header>
+    <main>
+        <h2>Explore o mundo Gastronômico!!</h2>
+    
+        <section>
+            <article>
+                <p>
+                    Bem-vindo ao Receitas do Joninhas, o seu destino definitivo para explorar e criar receitas deliciosas! Esse site é dedicado a todos que amam cozinhar e desejam experimentar pratos novos e saborosos. Seja você um cozinheiro iniciante ou um chef experiente, aqui você encontrará uma ampla variedade de receitas que atendem a todos os gostos e ocasiões. <br><br>
+
+                    Nossa missão é tornar a culinária acessível e prazerosa para todos. Oferecemos receitas detalhadas e fáceis de seguir, com instruções claras e ingredientes simples para que você possa preparar pratos incríveis em casa. Desde refeições rápidas e práticas para o dia a dia até receitas especiais para festas e eventos, nosso site tem algo para todos. <br><br>
+                    
+                    Além das receitas, você também encontrará dicas úteis de cozinha, truques para aprimorar suas habilidades culinárias e sugestões para tornar cada refeição ainda mais especial. No Receitas do Joninhas, acreditamos que cozinhar é uma forma de criar memórias e compartilhar momentos especiais com quem amamos. <br><br>
+                    
+                    Explore nossas receitas e comece a transformar sua cozinha em um verdadeiro paraíso gastronômico!
+                </p>
+            </article>
+            <aside>
+                <p>Algumas de nossas receitas</p>
+
+                <hr>
+                <article class="card">
+                    <figure>
+                        <figcaption>Torta de Frango</figcaption>
+                        <img src="imagens/tortaDeFrango.jfif" alt="Imagem da receita">
+                    </figure>
+                </article>
+                <hr>
+                <article class="card">
+                    <figure>
+                        <figcaption>Capuccino</figcaption>
+                        <img src="imagens/capuccino.jfif" alt="Imagem da receita">
+                    </figure>
+                </article>
+                <hr>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <p>Desenvolvido por Jonas</p>
+            <p>Email: JonasReceitas@gmail.com<p>
+              <abbr title="Phone">Tel:</abbr> (15) 99999-7777 
+             </p>
+          </address>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

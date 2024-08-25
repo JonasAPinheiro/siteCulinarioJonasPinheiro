@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas do Joninhas</title>
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="../estilos/receitas.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="../imagens/LogoAzul.png" alt="Logo do Site">
+        </figure>
+        <nav>
+            <a href="../index.html"><p>Inicio</p></a>
+            <a href="formulario.html"><p>Enviar Receita</p></a>
+            <menu>
+                <select onchange="redirecionarCategoria(this)" name="categoria" class="categoria">
+                    <option selected disabled>Receitas</option>
+                    <option value="salgadas">Salgadas</option>
+                    <option value="doces">Doces</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </menu>
+
+            <button onclick="mostrarMenu()"><img src="../imagens/menuHamburguer.png" alt=""></button>
+        </nav>
+
+        <section id="menuMobile">
+            <a href="../index.html"><p>Inicio</p></a>
+            <a href="formulario.html"><p>Enviar Receita</p></a>
+            <menu>
+                <select onchange="redirecionarCategoria(this)" name="categoria" class="categoria">
+                    <option selected disabled>Receitas</option>
+                    <option value="salgadas">Salgadas</option>
+                    <option value="doces">Doces</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </menu>
+        </section>
+    </header>
+    <main>
+        <h2>Receitas Salgadas</h2>      
+
+        <section class="receita">
+            <hr>
+            <h2>Torta de Frango</h2>
+            <section class="informacoes">
+                <figure>
+                    <img src="../imagens/tortaDeFrango.jfif" alt="Imagem da receita">
+                </figure>
+                <article>
+                    <p>Essa receita de torta de frango de liquidificador é deliciosa e muito prática para o dia a dia. Além de ser perfeita para levar para a festa junina da família. Não à toa, é uma das nossa campeãs de acessos. Por ser feita no liquidificador, a massa é líquida e a montagem é diferente de uma torta de frango tradicional. Você deve despejar metade dela na forma untada, adicionar o recheio e cobri-lo com o restante da massa. Se quiser, adicione um pouco de queijo ralado em cima para gratinar no forno antes de cozinhar. A torta de frango com massa de liquidificador é muito mais prática de fazer do que um empadão, por exemplo, já que você não precisa misturar farinha e manteiga, abrir a massa e cobrir a forma manualmente. Se você busca praticidade, essa é a receita ideal! Aprenda agora mesmo a fazer essa torta de frango simples e fácil!</p>
+                    <button type="button">Ver receita</button>
+                </article>
+            </section>
+            <hr>
+        </section>
+
+        <section class="receita">
+            <hr>
+            <h2>Lasanha de carne moída</h2>
+            <section class="informacoes">
+                <figure>
+                    <img src="../imagens/lasanha.jfif" alt="Imagem da receita">
+                </figure>
+                <article>
+                    <p>A receita de lasanha de carne moída é um prato clássico, muito amado e muito fácil de preparar. Também conhecida como lasanha à bolonhesa, pela sua origem em Bolonha, na Itália, essa receita conquistou o mundo! Este prato é uma verdadeira celebração de sabores, com camadas intercaladas de massa, molho de carne moída e queijo derretido, resultando em uma combinação deliciosa e irresistível! Com ingredientes simples, como carne moída, molho de tomate, queijo, presunto e massa para lasanha, esta receita é uma opção prática e deliciosa para reunir a família ao redor da mesa. A montagem dessa lasanha é um convite ao aroma delicioso que se espalha pela cozinha durante o preparo. Com um toque caseiro e muito sabor, este prato é uma escolha certeira para os amantes de massas e refeições reconfortantes. Surpreenda seus familiares e amigos com esta lasanha clássica e saborosa. Siga o passo a passo dessa receita e descubra como é simples preparar uma lasanha de carne moída que fará sucesso em qualquer ocasião.</p>
+                    <button type="button">Ver receita</button>
+                <article>
+            </section>
+            <hr>
+        </section>
+
+        <section class="receita">
+            <hr>
+            <h2>Enroladinho de Salsicha</h2>
+            <section class="informacoes">
+                <figure>
+                    <img src="../imagens/enroladinhoSalsicha.jfif" alt="Imagem da receita">
+                </figure>
+                <article>
+                    <p>Aprenda como fazer uma receita de enroladinho de salsicha deliciosa, uma opção prática e irresistível para suas festas e lanches. Com uma massa macia suculenta, esses petiscos conquistam paladares de todas as idades. Surpreenda seus convidados com essa receita fácil de fazer e cheia de sabor!</p>
+                    <button type="button">Ver receita</button>
+                </article>
+            </section>
+            <hr>
+        </section>
+
+    </main>
+    <footer>
+        <address>
+            <p>Desenvolvido por Jonas</p>
+            <p>Email: JonasReceitas@gmail.com<p>
+              <abbr title="Phone">Tel:</abbr> (15) 99999-7777 
+             </p>
+          </address>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

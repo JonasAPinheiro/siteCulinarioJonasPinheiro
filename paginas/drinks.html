@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas do Joninhas</title>
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="../estilos/receitas.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="../imagens/LogoAzul.png" alt="Logo do Site">
+        </figure>
+        <nav>
+            <a href="../index.html"><p>Inicio</p></a>
+            <a href="formulario.html"><p>Enviar Receita</p></a>
+            <menu>
+                <select onchange="redirecionarCategoria(this)" name="categoria" class="categoria">
+                    <option selected disabled>Receitas</option>
+                    <option value="salgadas">Salgadas</option>
+                    <option value="doces">Doces</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </menu>
+
+            <button onclick="mostrarMenu()"><img src="../imagens/menuHamburguer.png" alt=""></button>
+        </nav>
+
+        <section id="menuMobile">
+            <a href="../index.html"><p>Inicio</p></a>
+            <a href="formulario.html"><p>Enviar Receita</p></a>
+            <menu>
+                <select onchange="redirecionarCategoria(this)" name="categoria" class="categoria">
+                    <option selected disabled>Receitas</option>
+                    <option value="salgadas">Salgadas</option>
+                    <option value="doces">Doces</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </menu>
+        </section>
+    </header>
+    <main>
+        <h2>Drinks</h2>      
+
+        <section class="receita">
+            <hr>
+            <h2>Caipirinha</h2>
+            <section class="informacoes">
+                <figure>
+                    <img src="../imagens/caipirinha.jfif" alt="Imagem da receita">
+                </figure>
+                <article class="descricao">
+                    <p>Descubra agora o segredo da caipirinha original, uma receita clássica que vai transportar você para um sabor autêntico do Brasil! Com apenas três ingredientes e alguns passos simples, você poderá preparar essa deliciosa bebida refrescante em minutos. O equilíbrio perfeito entre limão, açúcar e cachaça irá surpreender seu paladar.</p>
+                    <button type="button">Ver receita</button>
+                </article>
+            </section>
+            <hr>
+        </section>
+
+        <section class="receita">
+            <hr>
+            <h2>Cappuccino caseiro</h2>
+            <section class="informacoes">
+                <figure>
+                    <img src="../imagens/capuccino.jfif" alt="Imagem da receita">
+                </figure>
+                <article class="descricao">
+                    <p>Não tem nada melhor que começar o dia com uma xícara de café, e um cappuccino especial para o Dia das Mães é uma ótima ideia. Aprenda a fazer cappuccino caseiro em pó com essa receita fácil, que você prepara no liquidificador e pode armazenar por até 6 meses. Semelhante aos cappuccinos em pó vendidos nos supermercados, essa mistura é deliciosa e prática. Basta misturar duas colheres de sobremesa em uma xícara de água quente para um cappuccino pronto em minutos. Armazene em um pote vedado em local seco para garantir a validade de seis meses. Faça hoje e desfrute de um café delicioso!</p>
+                    <button type="button">Ver receita</button>
+                </article>
+            </section>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <p>Desenvolvido por Jonas</p>
+            <p>Email: JonasReceitas@gmail.com<p>
+              <abbr title="Phone">Tel:</abbr> (15) 99999-7777 
+             </p>
+          </address>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

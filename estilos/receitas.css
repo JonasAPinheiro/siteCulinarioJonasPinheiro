@@ -1,0 +1,55 @@
+main .receita{
+    display: flex;
+    flex-direction: column;
+}
+
+main .receita h2{
+    text-align: start;
+    background-color: #F5F5F5;
+    color: #333333;
+}
+
+main .receita .informacoes{
+    background-color: #A9CCE3;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+
+main .receita article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+main .receita article button{
+    background-color: #F5F5F5;
+    color: #2E86C1;
+    text-align: center;
+    width: 15%;
+    border-radius: 20px;
+    border: #2E86C1 solid 2px;
+}
+
+main .receita article button:hover{
+    background-color: #2E86C1;
+    color: #F5F5F5;
+    border: #F5F5F5 solid 2px;
+}
+
+@media(max-width: 767px){
+    main .receita{
+        padding: 10px;
+    }
+    
+    main .receita .informacoes{
+        padding: 30px;
+    }
+
+    main .receita article button{
+        width: 50%;
+    }
+}

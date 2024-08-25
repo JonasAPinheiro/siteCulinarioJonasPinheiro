@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas do Joninhas</title>
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="/estilos/formulario.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="../imagens/LogoAzul.png" alt="Logo do Site">
+        </figure>
+        <nav>
+            <a href="../index.html"><p>Inicio</p></a>
+            <a href="formulario.html"><p>Enviar Receita</p></a>
+            <menu>
+                <select onchange="redirecionarCategoria(this)" name="categoria" class="categoria">
+                    <option selected disabled>Receitas</option>
+                    <option value="salgadas">Salgadas</option>
+                    <option value="doces">Doces</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </menu>
+
+            <button onclick="mostrarMenu()"><img src="../imagens/menuHamburguer.png" alt=""></button>
+        </nav>
+
+        <section id="menuMobile">
+            <a href="../index.html"><p>Inicio</p></a>
+            <a href="formulario.html"><p>Enviar Receita</p></a>
+            <menu>
+                <select onchange="redirecionarCategoria(this)" name="categoria" class="categoria">
+                    <option selected disabled>Receitas</option>
+                    <option value="salgadas">Salgadas</option>
+                    <option value="doces">Doces</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+            </menu>
+        </section>
+    </header>
+    <main>
+        <h2>Compartilhe sua receita conosco!!!</h2>
+        <form id="formulario" autocomplete="off">
+            <section class="formGroup"> 
+                <label>Seu nome:</label>
+                <input type="text" name="nome" required>
+
+                <label>Seu email:</label>
+                <input type="email" name="email" required>
+            </section>
+
+            <section class="formGroup">
+                <label>Nome da Receita:</label>
+                <input type="text" name="nomeReceita" required>
+
+                <label>Tempo de Preparo:</label>
+                <input type="number" placeholder="Coloque em minutos" name="tempoPreparo" required>
+            </section>
+
+            <section class="formGroup">
+                <label>Tipo de Receita</label>
+                <select name="categoria">
+                    <option>Salgada</option>
+                    <option>Doce</option>
+                    <option>Drink</option>
+                </select>
+
+                <label>Data da Sugestão:</label>
+                <input type="date" name="dataSug" required>
+            </section>
+
+            <section class="formGroup">
+                <label>Ingredientes:</label>
+                <textarea rows="5" name="ingredientes" required placeholder="Exemplo:
+                1 - 2 dentes de alho picados
+                2 - 200 g de requeijão de sua preferência
+                3 - 300 g de presunto picado"></textarea>
+
+                <label>Modo de Preparo:</label>
+                <textarea  rows="5" name="modoPreparo" required placeholder="Exemplo: 
+                1 - Em uma panela aqueça o azeite e doure o alho
+                2 - Junte o molho de tomate, o requeijão e o creme de leite."></textarea>
+            </section>
+
+            <section class="formGroup">
+                <input type="submit" value="Enviar" onclick="dadosReceita(this.form)">
+
+                <input type="reset" value="Limpar">
+            </section>
+
+        </form>
+    </main>
+    <footer>
+        <address>
+            <p>Desenvolvido por Jonas</p>
+            <p>Email: JonasReceitas@gmail.com<p>
+              <abbr title="Phone">Tel:</abbr> (15) 99999-7777 
+             </p>
+          </address>
+    </footer>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/formulario.js"></script>
+</body>
+</html>
